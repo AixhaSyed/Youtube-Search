@@ -1,0 +1,52 @@
+<div class='container'>
+      <div class="page-header">  
+        <img src='http://www.myretailmedia.com/templates/my_retail/images/mym-e-tube.gif' width="450" height="200" />
+        <!--<div class="page-header">-->
+ <!--<h1>YouTube Search
+ <img
+ style="float: right;"
+ *ngIf="loading" 
+ src='${loadingGif}'input-group input-group-lg />
+ </h1> 
+ </div>-->
+        
+      <div class="row">
+        <div class=" col-md-12">
+          <app-search-box
+             (loading)="loading = $event"
+             (results)="updateResult($event)"
+              ></app-search-box>
+        </div>
+      </div>
+
+        <img *ngIf="loading" style="margin-top:50px;"
+            src='https://www.battleforthenet.com/images/change_avatar/avatar-red.gif' />
+
+      </div>
+
+      <div class="row">
+        <app-search-results
+          *ngFor="let result of results"
+          [result]="result">
+        </app-search-results>
+      </div>
+</div>
+
+
+<!--<div class='container'>
+ <div class="page-header">
+ <h1>YouTube Search
+ <img
+ style="float: right;"
+ *ngIf="loading"
+ src='${loadingGif}' />
+ </h1>
+ </div>
+ 
+ <div class="row">
+ <div class="input-group input-group-lg col-md-12">
+ <search-box
+ (loading)="loading = $event"
+ (results)="updateResults($event)"
+ ></search-box>
+ </div>-->

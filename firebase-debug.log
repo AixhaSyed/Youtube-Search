@@ -1,0 +1,10 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      C:\Program Files\nodejs\node.exe C:\Users\Nida\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] CLI Version:  3.2.0
+[debug] Platform:     win32
+[debug] Node Version: v6.9.1
+[debug] Time:         Thu Dec 08 2016 01:06:37 GMT+0500 (Pakistan Standard Time)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/mytube-search-c282c 
